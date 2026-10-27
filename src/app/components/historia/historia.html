@@ -1,0 +1,25 @@
+<section id="historia">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1>{{ titulo }}</h1>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6" *ngFor="let element of acontecimientos">
+          <span
+            *ngIf="element.year === yearRecent"
+            class="new badge green darken-1"
+            data-badge-caption="Más reciente">
+          </span>
+
+          <span class="grey-text text-darken-2">{{ element.year }}</span>
+
+          <h5>{{ element.titulo | titlecase }}</h5>
+
+          <p>{{ element.descripcion | lowercase }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
