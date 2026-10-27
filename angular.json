@@ -40,33 +40,8 @@
               "node_modules/materialize-css/dist/css/materialize.min.css",
               "node_modules/material-icons/iconfont/material-icons.css"
             ],
-            "scripts": [
-              "node_modules/materialize-css/dist/js/materialize.min.js"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
-            }
-          },
-          "defaultConfiguration": "production"
+            "scripts": ["node_modules/materialize-css/dist/js/materialize.min.js"]
+          }
         },
         "serve": {
           "builder": "@angular/build:dev-server",

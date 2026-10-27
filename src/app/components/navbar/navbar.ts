@@ -1,6 +1,5 @@
-import { Component, OnInit, AfterViewInit, signal } from '@angular/core';
-import $ from 'jquery';
-declare var M : any; 
+import { Component, AfterViewInit } from '@angular/core';
+declare const M : any;
 
 @Component({
   selector: 'app-navbar',
@@ -8,17 +7,41 @@ declare var M : any;
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
-export class Navbar implements OnInit, AfterViewInit  {
-  ngAfterViewInit(): void {
-    M.Slider.init(document.querySelectorAll('.slider'));
-    M.Sidenav.init(document.querySelectorAll('.sidenav'), {});
-  }
-  ngOnInit(): void {
-  console.log('jQuery disponible:', $.fn.jquery);  
-  }
-  protected readonly title = signal('decoracion');
-  historia = "Historia"
-  productos = "Productos"
-  promociones = "Promociones"
+export class Navbar implements AfterViewInit {
+  nombreEmpresa : String = "Muebleria Elegance"
+  slogan : String = "Calidad ante todo precio"
 
+  menuOpciones = [
+    {
+      nombre : "historia",
+      icono : "../img/chair.png", 
+      ruta : "./historia"
+    },
+    {
+      nombre : "header",
+      icono : "img/header",
+      ruta : "./header"
+    },
+      {
+      nombre : "productos",
+      icono : "img/productos",
+      ruta : "./productos"
+    },
+      {
+      nombre : "promociones",
+      icono : "img/promociones",
+      ruta : "./promociones"
+    }
+  ]
+
+
+
+  ngAfterViewInit(): void {
+    const sidenav = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenav,{
+      edge : 'left',
+      draggable:true
+    });
+    
+  }
 }

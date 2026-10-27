@@ -13,8 +13,8 @@ import { Footer } from './components/footer/footer';
 
 @NgModule({
   declarations: [App, Navbar, Header, Historia, Productos, Promociones, Footer],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
-  bootstrap: [App],
+  bootstrap: [App,Navbar,Header,Historia,Productos,Promociones,Footer],
 })
 export class AppModule {}
