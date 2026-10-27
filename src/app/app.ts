@@ -17,11 +17,11 @@ export class App implements OnInit, AfterViewInit  {
   console.log('jQuery disponible:', $.fn.jquery);  
   }
   protected readonly title = signal('decoracion');
-  inicio = "Inicio"
-  categorias = "Categoria"
-  mision = "Mision y Vision"
-  catalogo = "Catalogo"
-  contacto = "Contacto"
-  redesSociales = "Redes Sociales"
+  navbar = "mueble"
+  header = "muebles"
+  historia = "Historia"
+  productos = "Productos"
+  promociones = "Promociones"
+  footers = "redesSociales"
 
 }
