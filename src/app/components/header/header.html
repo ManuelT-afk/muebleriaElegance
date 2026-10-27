@@ -1,1 +1,19 @@
-<p>header works!</p>
+<section class="header-slider">
+  <div class="slider">
+    <ul class="slides">
+      <li *ngFor="let item of menu">
+        <img [src]="item.img" [alt]="item.titulo" loading="lazy" />
+
+        <div class="caption left-align">
+          <h3>{{ item.titulo }}</h3>
+          <h5 class="light grey-text text-lighten-3">
+            {{ item.descripcion }}
+          </h5>
+          <a class="waves-effect waves-light btn pink lighten-1" href="#">
+            Ver más
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
