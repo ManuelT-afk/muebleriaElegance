@@ -40,8 +40,15 @@
               "node_modules/materialize-css/dist/css/materialize.min.css",
               "node_modules/material-icons/iconfont/material-icons.css"
             ],
-            "scripts": ["node_modules/materialize-css/dist/js/materialize.min.js"]
-          }
+            "scripts": [
+              "node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
+          },
+          "configurations": {
+            "development": {},
+            "production": {}
+          },
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular/build:dev-server",
