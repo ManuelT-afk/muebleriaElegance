@@ -18,10 +18,10 @@ export class App implements OnInit, AfterViewInit  {
   }
   protected readonly title = signal('decoracion');
   navbar = "mueble"
-  header = "muebles"
+  header = "Muebles"
   historia = "Historia"
   productos = "Productos"
   promociones = "Promociones"
-  footers = "redesSociales"
+  footers = "RedesSociales"
 
 }
