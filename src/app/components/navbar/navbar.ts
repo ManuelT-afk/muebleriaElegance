@@ -8,7 +8,7 @@ declare var M : any;
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
-export class navbar implements OnInit, AfterViewInit  {
+export class Navbar implements OnInit, AfterViewInit  {
   ngAfterViewInit(): void {
     M.Slider.init(document.querySelectorAll('.slider'));
     M.Sidenav.init(document.querySelectorAll('.sidenav'), {});
