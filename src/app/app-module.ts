@@ -1,6 +1,7 @@
+import { CommonModule } from '@angular/common';
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';    
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -13,8 +14,8 @@ import { Footer } from './components/footer/footer';
 
 @NgModule({
   declarations: [App, Navbar, Header, Historia, Productos, Promociones, Footer],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, CommonModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
-  bootstrap: [App,Navbar,Header,Historia,Productos,Promociones,Footer],
+  bootstrap: [App, Navbar, Header, Historia, Productos, Promociones, Footer],
 })
 export class AppModule {}
