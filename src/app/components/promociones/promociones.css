@@ -1,0 +1,90 @@
+.promociones-section {
+  padding: 2rem 0 3rem;
+  background: linear-gradient(135deg, #fff8e1, #f5f5f5);
+}
+
+.promo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.titulo-promociones {
+  color: #5d4037;
+  font-weight: 700;
+  margin: 0;
+}
+
+.promo-card {
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card-image {
+  position: relative;
+  height: 220px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.new.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+}
+
+.card-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3e2723;
+}
+
+.descripcion-promo {
+  min-height: 70px;
+  color: #5d4037;
+}
+
+.promo-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.chip {
+  background: #ffcc80;
+  color: #4e342e;
+  font-weight: 700;
+}
+
+.estado-promo {
+  color: #b71c1c;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: #6d4c41;
+  border-radius: 999px;
+}
+
+@media (max-width: 600px) {
+  .promo-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
